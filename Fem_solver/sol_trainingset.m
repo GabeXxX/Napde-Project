@@ -1,8 +1,8 @@
 addpath DataGeneration\
 clc, clear, close all
-nRef_vector= [2,2,1,3,3];
-q_file = "coefficient.txt";
-uh_file = 'uh.txt';
+nRef_vector= 4*ones(100,1);
+q_file = "C:\Users\rikyr\OneDrive\Desktop\NAPDE\Napde-VAE\data\q_file.txt";
+uh_file = 'uh_file1.txt';
 TestName = 'Test1';
 [sol_Matrix] = generate_sol(TestName, q_file, uh_file, nRef_vector);
 
