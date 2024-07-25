@@ -1,5 +1,4 @@
 clc, clear, close all
-addpath ConvergenceTest\
 
 TestName = 'ConvergenceTest';
 load('convergence_test_coefficient.mat') %% see functions.m --> muA
@@ -22,4 +21,4 @@ loglog(h, 10*h, 'k-','linewidth',2)
 loglog(h, 10*h.^2, 'k--','linewidth',2)
 grid on
 legend('L^2','H^1','h','h^2')
-T=table(h', err_H1', err_L2', VariableNames={'h', 'L^2','H^1'})
+table(h', err_H1', err_L2', VariableNames={'h', 'L^2','H^1'})

@@ -1,4 +1,4 @@
-function [uh, femregion]=C_main2D(TestName,nRef, diff_coeff)
+function [uh, femregion, errors, solutions]=C_main2D(TestName,nRef, diff_coeff, post_proc)
 %==========================================================================
 % Solution of the Poisson's problem with linear finite elements
 % (non homogeneous Dirichlet boundary conditions)
@@ -73,19 +73,22 @@ uh = A\b;
 
 uh = uh + u_g;
 
-%==========================================================================
-% POST-PROCESSING OF THE SOLUTION
-%==========================================================================
-
-%%[solutions] = C_postprocessing(Dati,femregion,uh);
-
-%==========================================================================
-% ERROR ANALYSIS
-%==========================================================================
-%errors = [];
-%if (Dati.plot_errors)
-%    [errors] = C_compute_errors(Dati,femregion,solutions);
-%end
-
-
+if post_proc == true
+    %==========================================================================
+    % POST-PROCESSING OF THE SOLUTION
+    %==========================================================================
+    
+    [solutions] = C_postprocessing(Dati,femregion,uh);
+    
+    %==========================================================================
+    % ERROR ANALYSIS
+    %==========================================================================
+    errors = [];
+    if (Dati.plot_errors)
+        [errors] = C_compute_errors(Dati,femregion,solutions);
+    end
+else
+    solutions=0;
+    errors=0;
+end
 

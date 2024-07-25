@@ -26,7 +26,7 @@ while ~feof(coeff_fileID)
     diff_coeff = sscanf(line, '%f');
     diff_coeff = reshape(diff_coeff, sqrt(length(diff_coeff)), sqrt(length(diff_coeff)));
 
-    [uh, femregion] = C_main2D(TestName, nRef, diff_coeff);
+    [uh, femregion, ~, ~] = C_main2D(TestName, nRef, diff_coeff, false);
     uh = row_wise_sort(uh, femregion);
     uh = full(uh');
     sol_Matrix(ii, 1: (2^nRef+1)^2) = uh;
