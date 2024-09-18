@@ -2,7 +2,7 @@
 % the points of the grid, via evaluating the function specified in the
 % variable f. This script was not used to generate the coefficients for the
 % dataset (we sampled them in python), but it was used for the convergence
-% tests.
+% test.
 
 addpath DataGeneration\
 clc, clear, close all

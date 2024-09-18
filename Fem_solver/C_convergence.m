@@ -1,3 +1,11 @@
+% This script runs a simple convergence test to see if the solver works as
+% expected and generates a plot of the convergence rate. The coefficient
+% matrix used is generated with the script "./coeff_trainingset" and then 
+% passed in a .txt file, while the data of the test are set in the file
+% C_dati under the TestName "Convergencetest".
+% The data used and the results are stored in the folder "./ConvergenceTest"
+
+
 clc, clear, close all
 addpath ConvergenceTest\
 

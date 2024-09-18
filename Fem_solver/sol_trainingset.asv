@@ -1,9 +1,6 @@
 % script used to generate a set of solutions starting from the coefficients
 % loaded with the file .txt whose name is saved in the variable q_file. The
-% data of the problem are set in C_dati as usual, while the variable
-% nRef_vector sets the number of refinement for each one of the solution
-% computations. The script saves the results in the file specified in the
-% variable uh_file.
+% data of the problem are set i
 
 
 addpath DataGeneration\

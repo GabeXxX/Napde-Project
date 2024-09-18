@@ -35,6 +35,7 @@ while ~feof(coeff_fileID)
     fprintf(sol_fileID, '\n');
 
     %uh = reshape(uh, 2^nRef +1, 2^nRef +1);
+    disp(ii)
     ii = ii+1;
 end
 
