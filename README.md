@@ -25,6 +25,5 @@ To reproduce the results:
 
 
 ## References
-<a id="1">[1]</a>  
-H. Goh, S. Sheriffdeen, J. Wittmer, and T. Bui-Thanh. Solving bayesian inverse problems
+<a id="1">[1]</a>  H. Goh, S. Sheriffdeen, J. Wittmer, and T. Bui-Thanh. Solving bayesian inverse problems
 via variational autoencoders. Proceedings of Machine Learning Research, 2021.
