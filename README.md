@@ -9,8 +9,8 @@ model is able to take advantage of all the information that are usually given in
 
 ## Project Structure 
 - `./fem_solver`: contains the finite element solver to generate the solutions to the diffusion equation
-- `./tests`: contains the code developed to define the tests performed
-- `./past_versions`: contains the actual tests, performed using the lastest version of the code
+- `./test`: contains the code developed to define the tests performed
+- `./old_versions`: contains the actual tests, performed using the lastest version of the code
 
 ## Prerequisite
 - Matlab
