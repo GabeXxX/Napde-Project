@@ -9,8 +9,8 @@
 addpath DataGeneration\
 clc, clear, close all
 nRef_vector= 4*ones(500,1);
-q_file = '..\test\test_data\q_file_nref4.txt';
-uh_file = '..\test\test_data\uh_newf_nref4.txt';
+q_file = '..\test\test_data\q_file.txt';
+uh_file = '..\test\test_data\uh.txt';
 TestName = 'Test2';
 [sol_Matrix] = generate_sol(TestName, q_file, uh_file, nRef_vector);
 
